@@ -22,12 +22,12 @@ export default function Form() {
     const [errorMessage, setErrorMessage] = useState(null)
 
     function imcCalculator() {
-        let heigthFormat = height.replace(",",".")
+        let heigthFormat = height.replace(",", ".")
         return setImc((weight / (heigthFormat * heigthFormat)).toFixed(2))
     }
 
     function verificationImn() {
-        if(imc == null){
+        if (imc == null) {
             Vibration.vibrate();
             setErrorMessage("Campo obrigatório*")
         }
@@ -71,12 +71,12 @@ export default function Form() {
                     placeholder="Ex. 75.500"
                     keyboardType="numeric"
                 />
-                <TouchableOpacity
-                    style={styles.buttonCalculator}
-                    onPress={() => {validationImc()}}
-                >
-                    <Text style={styles.textButtonCalculator}>{textButton}</Text>
-                </TouchableOpacity>
+                    <TouchableOpacity
+                        style={styles.buttonCalculator}
+                        onPress={() => { validationImc() }}
+                    >
+                        <Text style={styles.textButtonCalculator}>{textButton}</Text>
+                    </TouchableOpacity>
             </View>
             <ResultImc messageResultImc={messageImc} resultImc={imc} />
         </Pressable>

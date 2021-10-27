@@ -3,8 +3,10 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     formContext: {
         flex:1,
-        backgroundColor:"#ffffff",
+        width:"80%",
+        backgroundColor:"#FEF5ED",
         alignItems:"center",
+        justifyContent:"center",
         borderTopLeftRadius:30,
         borderTopRightRadius:30,
         paddingTop:30,
@@ -28,12 +30,11 @@ const styles = StyleSheet.create({
     },
     buttonCalculator:{
         borderRadius:50,
-        alignItems:"center",
-        justifyContent:"center",
         width:"90%",
-        backgroundColor:"#ff0043",
-        paddingTop:14,
-        paddingBottom:14,
+        alignItems:"center",
+        backgroundColor:"#99A799",
+        paddingTop:5,
+        paddingBottom:5,
         marginLeft:12,
         marginTop:30,
     },
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
         color:"red",
         fontWeight:"bold",
         paddingLeft:20,
-    }
+    },
 
 });
 
